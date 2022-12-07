@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/Framework.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Sans">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>Typing Speed Test</title>
+</head>
+<body>
+    <div class="game bg-eee">
+        <div class="name c-white p-20 fs-25 fw-bold txt-c">Typing Speed Test</div>
+        <div class="container">
+            <div class="setting txt-c c-white p-10 rad-6 ">
+                <div class="setting-msg fs-20 c-white rad-6 fw-bold p-10 mb-20">Choose Level</div>
+                <span class="hard fs-20 c-white rad-6 fw-bold p-10">Hard</span>
+                <span class="normal fs-20 c-white rad-6 fw-bold p-10">Normal</span>
+                <span class="easy fs-20 c-white rad-6 fw-bold p-10">Easy</span>
+                <span class="all fs-20 c-white rad-6 fw-bold p-10">All</span>
+            </div>
+            <div class="message bg-white rad-6 p-15 txt-c">
+                You Are in level <span class="level fw-bold"></span> & You Have <span class="seconds fw-bold"></span> Seconds To Type The Word
+            </div>
+            <div class="start fs-25 fw-bold txt-c c-white p-20 rad-6 ">Start Test</div>
+            <div class="word txt-c fw-bold"></div>
+            <input type="text" id="" class="input w-full p-15 d-block fs-20 txt-c rad-6">
+            <div class="upcoming-words bg-white p-15 d-flex rad-6">
+            </div>
+            <div class="control bg-white d-flex space-between p-15 rad-6">
+                <div class="time">Time Left is <span class="fw-bold c-green"></span> Seconds</div>
+                <div class="score">Score <span class="got fw-bold c-black">0</span> From <span class="total fw-bold c-green"></span></div>
+            </div>
+            <div class="finish fw-bold txt-c p-15 fs-35"></div>
+        </div>
+    </div>
+    <script src="javascript/code.js"></script>
+</body>
+</html>

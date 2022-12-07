@@ -1,0 +1,151 @@
+/* Start Global Rules */
+:root {
+    --main-color: #22c55e;
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+
+
+/* start responsive */
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+/* end responsive */
+
+/* End GLobal Rules */
+
+/* start text  */
+.game {
+    min-height: 100vh;
+
+}
+
+.container {
+    margin: auto;
+    max-width: 900px;
+
+}
+
+.name {
+    background-color: var(--main-color);
+}
+
+.setting {
+    margin: 15px 0;
+}
+
+.setting span {
+    background-color: var(--main-color);
+    cursor: pointer;
+    margin: 0 10px 0;
+}
+
+.setting .setting-msg {
+    color: var(--main-color);
+}
+
+.message {
+    margin: 15px 0;
+}
+
+.message span {
+    color: var(--main-color);
+}
+
+.message span::before {
+    content: "[ ";
+}
+
+.message span::after {
+    content: " ]";
+}
+
+
+
+.start {
+    background-color: var(--main-color);
+    cursor: pointer;
+}
+
+.word {
+    font-size: 60px;
+    color: var(--main-color);
+    user-select: none;
+}
+
+.input {
+    margin: 15px auto;
+    border: 3px solid var(--main-color);
+    text-transform: capitalize;
+    caret-color: var(--main-color);
+}
+
+input:focus {
+    outline: none;
+}
+
+.upcoming-words {
+    margin: 15px 0;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.upcoming-words div {
+    background-color: var(--main-color);
+    color: white;
+    font-weight: bold;
+    margin: 4px;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.control {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    border-radius: 6px;
+}
+
+.finish .good {
+    color: var(--main-color);
+}
+
+.finish .bad {
+    color: red;
+}
+
+/* end test  */
